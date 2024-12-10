@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farm Reservation</title>
+  <link rel="stylesheet" href="C:\Users\yotub\Desktop\Project Farm\css1\page4.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="C:\Users\yotub\Desktop\Langage\Project\html\landing page.html">Home</a></li>
+        <li><a href="#activities">Activities</a></li>
+        <li><a href = "register.html"> Login </a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h1>Welcome to Farm Adventures</h1>
+      <button onclick="scrollToActivities()"> Let's Discover</button>
+    </div>
+  </header>
+  
+  <main>
+    <section class="activities" id="activities">
+      <div class="activity">
+        <img src="C:\Users\yotub\Desktop\Project Farm\images\horse.jpg" alt="Horse Riding">
+        <div class="content">
+          <h2>Horse Riding</h2>
+          <p><strong> Coach</strong> Ms. Mareim Chokri </p>
+          <p> <strong> Schedule: </strong>  Monday 15 AM|Sunday 17 AM</p>
+          <p> <strong> Price:</strong> 50 TND</p>
+          <button onclick="showReservationForm('Horse Riding')"><h3> Reserve Now </h3></button>
+        </div>
+      </div>
+  
+      <div class="activity">
+        <img src="C:\Users\yotub\Desktop\Project Farm\images\pottry.jpg" alt="Pottery Workshop">
+        <div class="content">
+          <h2>Pottery workshop</h2>
+          <p> <strong> Teacher :</strong> Mona Tounsi</p>
+          <p><strong> Kids: </strong> 8 AM</p>
+          <p><strong> Adults:</strong> Friday 10 AM</p>
+          <p><strong> Price:</strong> 40 TND</p>
+          <button onclick="showReservationForm('Pottery Workshop')"><h3> Reserve Now </h3></button>
+        </div>
+      </div>
+  
+      <div class="activity">
+        <img src="C:\Users\yotub\Desktop\Project Farm\images\camping.jpg" alt="Camping Adventure">
+        <div class="content">
+          <h2>Camping</h2>
+          <p><strong> Leaders:</strong> Yessin Hamem, Molka Touzri</p>
+          <p><strong> Duration:</strong> 3 days </p>
+          <p> <strong> Price:</strong> 50TND</p>
+          <p><strong> Materials Included guys! </strong></p>
+          <button onclick="showReservationForm('Camping')"> <h3> Reserve Now </h3></button>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+
+  
+  <div class="reservation-form-container" id="reservationForm">
+    <form>
+      <h2>Reservation for: <span id="activityName"></span></h2>
+      <label for="name"><strong> Name:</strong></label>
+      <input type="text" id="name" required />
+      <label for="email"><strong id ="resv"> E-mail:</strong></label>
+      <input type="email" id="email" required />
+      <label for="date"> <strong id ="resv"> Date: </strong> :</label>
+      <input type="date" id="date" required />
+      <label for="date"> <strong id="resv"> Password </strong> :</label>
+      <input type="password" id="password" required />
+      <label for="participants"><strong id="resv"> Team of:</strong></label>
+      <input type="number" id="participants" min="1" required />
+      <button type="submit">Sign up For reservation</button>
+      <button type="button" onclick="hideReservationForm()">Annuler</button>
+    </form>
+  </div>
+
+  <footer>
+    
+    <div class="contact">
+      <p>📞 +216 93355246 / 29036682 | ✉️ TorbeFarm@gmail.com</p>
+      <p>🏡 Z.I Chebedda, Fouchana 1135 Tunisia</p>
+      <div class="cntct">
+        <label for="e-contact"><strong> Contact Us through Email:</strong></label>
+        <input type="text" id="e-contact" class="e-contact" required />
+        <textarea name="textarea" rows="10" class="textarea" placeholder="Leave Your Message"></textarea>
+        <button>Send</button>
+      </div>
+    </div>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank">🌐 Facebook</a>
+      <a href="https://twitter.com" target="_blank">🐦 Twitter</a>
+      <a href="https://instagram.com" target="_blank">📸 Instagram</a>
+    </div>
+  </footer>
+  
+  
+  <script src="C:\Users\yotub\Desktop\Project Farm\javascript\mini.js"></script>
+</body>
+
+</html>

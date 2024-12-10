@@ -1,0 +1,335 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+body {
+  font-family: 'Arial', sans-serif;
+ 
+}
+header {
+  position: relative;
+  height: 90vh;
+  background: url('C:/Users/yotub/Desktop/Project Farm/images/back.avif.jpg') no-repeat center/cover; ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+nav {
+  position: absolute;
+  top: 0px;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 25px 0;
+ 
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+
+}
+
+nav a:hover {
+  background: #a5c568;
+}
+/*-----*/
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  animation: fadeInDown 1s ease-out;
+}
+
+.hero-content button {
+  background: #486e1c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero-content button:hover {
+  background: #4e611c;
+}
+/*----*/ 
+.activities {
+  display: flex;
+  justify-content: space-around;
+  padding: 25px;
+  gap: 20px;
+  background-color: #1e2d1e;
+  transition: all 0.2s ease
+}
+
+.activity {
+  background-color: rgb(139, 135, 135);
+  height: 380px;
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease ;
+  img{
+    width: 100%; 
+    height: 200px; 
+    border-radius: 8px;
+  }
+}
+
+.content {
+  padding: 10px;
+  text-align: center;
+  transition: all 0.2s ease ;
+  
+}
+
+button {
+  background-color:  #9cc53e;
+  border: none;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+h3{
+  font-family: Georgia, serif;
+  
+}
+
+#activityName{
+  font-family:Georgia, serif ;
+  color:rgb(201, 147, 77);
+}
+
+
+.reservation-form-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background: rgba(0, 0, 0, 0.8);
+
+}
+
+form {
+  background: #d2d6b9;
+  border-radius: 8px;
+  text-align: center;
+  width: 600px;
+  height: 650px;
+  padding: 30px;
+}
+h2{
+  font-family: Georgia, serif;
+  font-size: 25px;
+  }
+  strong{
+    font-family: system-ui;
+    color: #2a3f04;
+  }
+form input,
+form button {
+  margin: 10px 0;
+  padding: 12px;
+  width: 100%;
+
+}
+
+button:hover {
+  background-color: #648024;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.reservation-form-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  background: rgba(5, 2, 10, 0.8);
+  display: none;
+  color: #496111;
+  justify-content: center;
+  align-items: center;
+  animation: slideIn 0.5s ease-in-out;
+}
+.activity {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.activity.animate {
+  transform: scale(1.1);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  padding-bottom: 10px; 
+  color: white;
+  background: #063c08;
+  transition: transform 0.3s ease;
+}
+
+
+footer .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px; 
+}
+
+
+footer .social-icons {
+
+}
+
+footer .social-icons a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  color: #28a745; 
+}
+
+
+footer .cntct {
+  padding-top: 8px; 
+  display: flex;
+  flex-direction: column;
+  gap: 8px; 
+  align-items: flex-start;
+}
+
+footer .e-contact {
+  width: 100%;
+  height: 30px; 
+  padding: 4px; 
+  font-size: 14px; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+footer label strong {
+  color: aliceblue;
+  font-size: 16px; 
+}
+
+
+footer .textarea {
+  width: 100%;
+  padding: 8px; 
+  font-size: 14px; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+/* button styles */
+footer button {
+  padding: 8px; 
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+footer button:hover {
+  background-color: #218838; 
+}
+
+
+.activities .activity {
+  animation: fadeIn 0.5s ease-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.activities .activity:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#resv{
+  color: #0a0f01;
+  font-family: cursive;
+}
